@@ -1,0 +1,16 @@
+'''6.Write a program which will perform sum and multiplication,that sums and multiplies(respectively) all the numbers 
+in a list of numbers. For example, sum([1,2,3,4]) should return 10 and multiply([1,2,3,4]) should return 24.'''
+
+num=int(input("Enter the number of elements for the list: "))
+list1=list()
+print("Enter the elements: ")
+for i in range(0,num):
+    element=int(input())
+    list1.append(element)
+sum1=0
+prod=1
+for i in list1:
+    sum1=sum1+i
+    prod=prod*i
+print("sum of the list is ",list1," is ",sum1)
+print("product of the list is ",list1," is ",prod)
